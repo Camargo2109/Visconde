@@ -1,0 +1,229 @@
+*
+{
+    border:0;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+html, body
+{
+    width:100%;
+    height:100%;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #00259e);
+}
+
+main
+{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:flex-start;
+    width:100%;
+    height:100%;
+}
+
+.nav-coluna
+{
+    
+    padding-top: 50px;
+    width:150px;
+    height:100%;
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:center;
+}
+
+.icone
+{
+    width:50px;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+}
+
+.vazio
+{
+    flex-grow:1;
+}
+
+.base
+{
+    display: flex;
+    margin-bottom: 50px;
+    align-items: flex-end;
+}
+
+.conteudo
+{
+    margin-left:150px;
+    flex-grow:1;
+    height:100%;
+    padding:50px 100px;
+}
+
+.pesquisa
+{
+    width:fit-content;
+    height:fit-content;
+    display:flex;
+    align-items:center;
+    margin:0 auto;
+}
+
+input[type=text]{
+    padding:10px;
+    font-size:18pt;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    background-color:rgb(190, 190, 190);
+    height:50px;
+}
+
+.botao-pesquisa
+{
+    font-size:18pt;
+    padding:10px;
+    height:50px;
+    width:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(105, 105, 105);
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.perfil
+{
+    width:300px;
+    height:auto;
+    margin-top:100px;
+    display:flex;
+    align-items: center;
+}
+
+.foto-perfil
+{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin-bottom: -15px;
+}
+
+.nome-perfil
+{
+    display:flex;
+    align-items:center;
+    color:rgb(255,255,255);
+    font-size:24pt;
+    padding-left: -10px;
+    margin-right: 10px;
+}
+
+.perfil .foto-perfil img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Adiciona borda circular */
+}
+
+
+.verificado
+{
+    width:30px;
+    display:flex;
+    align-items:center;
+}
+
+.titulo-postagem
+{
+    font-size:16pt;
+    padding:10px 0px;
+}
+
+.tempo-postagem
+{
+    padding:5px 0px;
+}
+
+img
+{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    vertical-align:middle;
+}
+
+.postagem
+{
+    width:600px;
+    height:400px;
+    padding:10px 0px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.postagem img {
+    border-radius: 10px; 
+}
+
+.botoes-postagem
+{
+    font-size:18pt;
+    padding:10px 0px;
+}
+
+.botoes-postagem i
+{
+    padding:0px 8px;
+    color: #ffffff; 
+    cursor: pointer;
+}
+
+
+.botoes-postagem i.liked {
+    color: #ff0000; 
+}
+
+.botoes-postagem i.bookmarked {
+    color: yellow; 
+}
+
+
+.centralizar
+{
+    width:fit-content;
+    margin:0 auto;
+    padding:0px 50px;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 1750px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn i {
+    font-size: 30px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: transparent;
+}
+
+

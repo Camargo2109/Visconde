@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Visconde Sabugosa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <nav class="nav-coluna">
+            <div class="icone">
+                <i class="fas fa-user fa-2x"></i>
+            </div>
+            <div class="icone">
+                <i class="fas fa-bell fa-2x"></i>
+            </div>
+            <div class="icone">
+                <i class="fas fa-compass fa-2x"></i>
+            </div>
+            <div class="icone">
+                <i class="fas fa-heart fa-2x"></i>
+            </div>
+            <div class="vazio"></div>
+            <div class="icone base">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            
+        </nav>
+        
+        <div class="conteudo">
+
+            <div class="pesquisa">
+                <input type="text" maxlength="30" size="30"><i class="fas fa-search botao-pesquisa"></i>
+            </div>
+
+            <div class="centralizar">
+                <div class="perfil">
+                    <div class="foto-perfil">
+                        <img src="img/perfil.jpg">
+                    </div>
+                    <div class="nome-perfil">PodPah</div>
+                    <div class="verificado">
+                        <img src="img/verificado.png">
+                    </div>
+                </div>
+    
+                <div class="postagem">
+                    <div class="titulo-postagem">
+                        Lucas Moura no PodPah #696
+                    </div>
+                    <div class="tempo-postagem">
+                        Há 1 hora
+                    </div>
+                    <div class="foto-postagem">
+                        <img src="img/postagem.png">
+                    </div>
+                    <div class="botoes-postagem">
+                        <i id="likeIcon" class="far fa-solid fa-heart" onclick="toggleLike(this)"></i>
+                        <i class="far fa-solid fa-comment"></i>
+                        <i class="fas fa-paper-plane"></i>
+                        <i id="bookmarkIcon" class="far fa-solid fa-bookmark" onclick="toggleBookmark(this)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="centralizar">
+                <div class="perfil">
+                    <div class="foto-perfil">
+                        <img src="img/logo-tnt.png">
+                    </div>
+                    <div class="nome-perfil">Tnt</div>
+                    <div class="verificado">
+                        <img src="img/verificado.png">
+                    </div>
+                </div>
+    
+                <div class="postagem">
+                    <div class="titulo-postagem">
+                        Foi o que pediu o Ministério Público da Espanha como pena para Daniel Alves por agressão sexual, além do pagamento de uma indenização de 150 mil euros (cerca de R$ 800 mil) à vítima. Ainda não há data para a realização do julgamento.
+                    </div>
+                    <div class="tempo-postagem">
+                        Há 5 minutos
+                    </div>
+                    <div class="foto-postagem">
+                        <img src="img/postagem-tnt.png">
+                    </div>
+                    <div class="botoes-postagem">
+                        <i id="likeIcon" class="far fa-solid fa-heart" onclick="toggleLike(this)"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="fas fa-paper-plane"></i>
+                        <i id="bookmarkIcon" class="far fa-solid fa-bookmark" onclick="toggleBookmark(this)"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <i class="fa-solid fa-caret-up fa-bounce" style="color: #ffffff;"></i>
+    </button>
+    
+    <script src="scripts.js"></script>
+</body>
+
+</html>
