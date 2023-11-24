@@ -52,6 +52,53 @@ main
     cursor: pointer;
 }
 
+/* Icone User */
+.icone:hover i.fa-user {
+    transform: scaleX(-1);
+    transition: transform 1s ease;
+}
+
+/*Animação botão explorar*/
+.icone:nth-child(3):hover i {
+    transform: rotate(360deg); 
+    transition: transform 1s ease; 
+}
+
+/*Botão sino*/
+
+.icone:hover i.swing {
+    animation: swing 0.5s ease-in-out;
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25%, 75% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+}
+
+/* Adicione a animação 'pulse' */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.icone:hover i.fa-heart {
+    animation: pulse 1s ease-in-out;
+}
+
 .vazio
 {
     flex-grow:1;
@@ -79,6 +126,7 @@ main
     display:flex;
     align-items:center;
     margin:0 auto;
+    cursor: pointer;
 }
 
 input[type=text]{
@@ -86,12 +134,16 @@ input[type=text]{
     font-size:18pt;
     border-top-left-radius:20px;
     border-bottom-left-radius:20px;
-    background-color:rgb(190, 190, 190);
+    background-color:rgb(255, 255, 255);
     height:50px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: white;
 }
 
 .botao-pesquisa
 {
+    color: black;
     font-size:18pt;
     padding:10px;
     height:50px;
@@ -99,9 +151,19 @@ input[type=text]{
     display:flex;
     align-items:center;
     justify-content:center;
-    background-color:rgb(105, 105, 105);
+    background-color:rgb(255, 255, 255);
     border-top-right-radius:20px;
     border-bottom-right-radius:20px;
+    transition: transform 0.3s ease;
+}
+
+.botao-pesquisa:hover {
+    transform: scale(1.1); 
+}
+
+.botao-pesquisa:active {
+    transition: none;
+    transform: scale(1); 
 }
 
 .perfil
@@ -129,12 +191,14 @@ input[type=text]{
     font-size:24pt;
     padding-left: -10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .perfil .foto-perfil img {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Adiciona borda circular */
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 
@@ -189,15 +253,32 @@ img
     cursor: pointer;
 }
 
-
+@keyframes scaleHeart {
+    0%, 100% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.5); 
+    }
+}
 .botoes-postagem i.liked {
     color: #ff0000; 
+    animation: scaleHeart 0.5s ease;
 }
 
 .botoes-postagem i.bookmarked {
     color: yellow; 
+    animation: scaleBookmark 0.5s ease;
 }
 
+@keyframes scaleBookmark {
+    0%, 100% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.5); 
+    }
+}
 
 .centralizar
 {
@@ -209,12 +290,10 @@ img
 #scrollToTopBtn {
     display: none;
     position: fixed;
-    bottom: 50px;
-    left: 1750px;
+    bottom: 30px;
+    right: 50px;
     background-color: transparent;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
+    color: #ffffff;
     cursor: pointer;
 }
 
